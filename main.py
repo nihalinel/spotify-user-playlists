@@ -24,8 +24,10 @@ app = Flask(__name__)
 app.config['SECRET_KEY'] = os.urandom(64)  # generate a string of 64 random bytes 
                                             # and assign it to the secret key config var
 
-client_id = ' '
+# use unique client id & client secret
+client_id = ' ' 
 client_secret = ' '
+
 redirect_uri = 'http://localhost:5000/callback'
 scope = 'playlist-read-private'
 # if we use multiple, this is how it would look:
